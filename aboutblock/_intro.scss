@@ -1,0 +1,62 @@
+/** @format */
+
+.intro {
+  background-color: #014e56;
+  background-image: url(../img/intro-bottom-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  &__right {
+    /* Find the best talent */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 60px;
+    /* or 100% */
+
+    color: #ffffff;
+  }
+  &__left {
+    /* We help companies bu */
+    width: 700px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    color: #ffffff;
+  }
+}
+.span {
+  color: #f67e7e;
+}
+@media only screen and (max-width: 1100px) {
+  .intro {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-size: 150px;
+    padding: 20px;
+    // min-height: 50vh;
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 25px;
+    }
+    &__left {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+      width: 80%;
+    }
+  }
+}

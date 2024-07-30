@@ -1,0 +1,95 @@
+/** @format */
+
+.container__build {
+  background-color: #012f34;
+  display: flex;
+  padding: 150px 250px;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.build__title {
+  /* Build & manage distr */
+  width: 90%;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+
+  color: #ffffff;
+}
+
+
+.card__title {
+  /* Experienced Individu */
+
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  color: #f67e7e;
+}
+.card__text {
+  /* Our network is made */
+    width: 90%;
+
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+@media only screen and (max-width:1100px){
+  .container__build{
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .build__left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .build__title{
+    font-size: 2rem;
+    width: 90%;
+    text-align: center;
+  }
+  .build__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .build__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px ;
+    width: 70%;
+  }
+  .card__title{
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .card__text{
+    width: 100%;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+  }
+}

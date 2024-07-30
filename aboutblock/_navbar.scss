@@ -1,0 +1,85 @@
+/** @format */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #014e56;
+  padding: 100px 165px;
+  &__logo {
+    width: 100px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__link {
+    /* home */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    transition: linear 0.2s;
+    &:hover {
+      color: #f67e7e;
+    }
+
+    color: #ffffff;
+  }
+  &__btn {
+    /* Group 6 */
+
+    /* Rectangle */
+
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 24px;
+
+    /* contact us */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    transition: all 0.3ms ease-in-out;
+    color: #002529;
+    &:hover {
+      /* Group 6 */
+
+      background-color: #014e56;
+      color: #ffffff;
+
+      color: #ffffff;
+    }
+  }
+  transition: all 0.3ms ease-in-out;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: 20%;
+    justify-content: center;
+    &__logo {
+      width: 100px;
+    }
+    &__list {
+      gap: 5px;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+/** @format */
+
+.directors {
+  background-color: #004047;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+.card {
+  background-color: #012f34;
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+}
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.title__card {
+  /* Cristian Duncan */
+
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  text-align: center;
+
+  color: #79c8c7;
+}
+.txt__card {
+  /* Co-founder & COO */
+  font-family: "Livvic";
+  font-size: 13px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  text-align: center;
+
+  color: #ffffff;
+}
+.card_btn {
+  background-color: #f67e7e;
+  width: 46px;
+  height: 46px;
+  border-style: none;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  transition: all 0.3ms ease-in-out;
+}
+.card_btn:hover {
+  background-color: #79c8c7;
+  color: #012f34;
+}
+.cards-h1 {
+  /* Meet the directors */
+
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  text-align: center;
+
+  color: #ffffff;
+}

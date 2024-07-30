@@ -1,0 +1,39 @@
+/** @format */
+
+.Clients {
+  background-color: #012f34;
+  background-image: url(../img/clients-bg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+}
+.clients-title {
+  /* Some of our clients */
+
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  text-align: center;
+
+  color: #ffffff;
+}
+.clients-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 1100px) {
+  .Clients {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .clients-img {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

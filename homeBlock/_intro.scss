@@ -1,0 +1,63 @@
+/** @format */
+
+.intro {
+  background-color: #014e56;
+  background-image: url(../img/intro-bottom-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 50px 150px 150px;
+  display: flex;
+  gap: 350px;
+
+  &__right {
+    /* Find the best talent */
+
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 60px;
+    /* or 100% */
+
+    color: #ffffff;
+  }
+  &__left {
+    display: flex;
+    align-items: end;
+    /* Finding the right pe */
+    width: 430px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+}
+.span {
+  color: #f67e7e;
+}
+@media only screen and (max-width: 1100px) {
+  .intro {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-size: 50%;
+    padding: 0;
+    // min-height: 50vh;
+
+    &__title {
+      width: 100% !important;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 25px;
+    }
+    &__left {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 1rem;
+      width: 90%;
+    }
+  }
+}

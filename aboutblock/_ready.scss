@@ -1,0 +1,59 @@
+/** @format */
+
+.ready__container {
+  width: 100%;
+  background-color: #f67e7e;
+  padding: 90px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/readyimg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.h1 {
+  /* Ready to get started */
+
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+
+  color: #012f34;
+}
+.btn {
+  /* Group 6 */
+background-color: #f67e7e;
+  /* Rectangle */
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  border: 2px solid #012f34;
+  border-radius: 24px;
+
+  /* contact us */
+
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  color: #012f34;
+}
+@media only screen and (max-width: 1100px) {
+
+  .ready__container{
+    flex-direction: column;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .h1{
+    font-size: 2rem;
+  }
+
+}

@@ -1,0 +1,871 @@
+@charset "UTF-8";
+/** @format */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #014e56;
+  padding: 100px 165px;
+}
+.navbar__logo {
+  width: 100px;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar__link {
+  /* home */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  transition: linear 0.2s;
+  color: #ffffff;
+}
+.navbar__link:hover {
+  color: #f67e7e;
+}
+.navbar__btn {
+  /* Group 6 */
+  /* Rectangle */
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  /* contact us */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #002529;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: 20%;
+    justify-content: center;
+  }
+  .navbar__logo {
+    width: 100px;
+  }
+  .navbar__list {
+    gap: 5px;
+  }
+  .navbar__btn {
+    display: none;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/** @format */
+.intro {
+  background-color: #014e56;
+  background-image: url(../img/intro-bottom-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 50px 150px 150px;
+  display: flex;
+  gap: 350px;
+}
+.intro__right {
+  /* Find the best talent */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 60px;
+  /* or 100% */
+  color: #ffffff;
+}
+.intro__left {
+  display: flex;
+  align-items: end;
+  /* Finding the right pe */
+  width: 430px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.span {
+  color: #f67e7e;
+}
+
+@media only screen and (max-width: 1100px) {
+  .intro {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-size: 50%;
+    padding: 0;
+  }
+  .intro__title {
+    width: 100% !important;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 25px;
+  }
+  .intro__left {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+/** @format */
+.container__build {
+  background-color: #012f34;
+  display: flex;
+  padding: 150px 250px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.build__title {
+  /* Build & manage distr */
+  width: 90%;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+  color: #ffffff;
+}
+
+.card__title {
+  /* Experienced Individu */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #f67e7e;
+}
+
+.card__text {
+  /* Our network is made */
+  width: 90%;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container__build {
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .build__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .build__title {
+    font-size: 2rem;
+    width: 90%;
+    text-align: center;
+  }
+  .build__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .build__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 70%;
+  }
+  .card__title {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .card__text {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+/** @format */
+.success-stories {
+  background-image: url(../img/deleverImg.png), url(../img/deleverbottomimg.png);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  text-align: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #004047;
+  color: #fff;
+  margin: auto;
+  padding: 150px 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header h1 {
+  /* Delivering real resu */
+  width: 932px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: auto;
+  line-height: 48px;
+  /* or 100% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.testimonial {
+  padding: 20px;
+  max-width: 300px;
+}
+
+blockquote {
+  /* “The team perfectly */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 25px;
+  /* or 167% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.author {
+  align-items: center;
+  margin-top: 5px;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.author strong {
+  /* Kady Baker */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  text-align: center;
+  color: #79c8c7;
+}
+
+.author p {
+  /* Product Manager at B */
+  font-family: "Livvic";
+  font-size: 1rem;
+  line-height: 18px;
+  /* identical to box height, or 138% */
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  header h1 {
+    width: 90%;
+    font-size: 3rem;
+  }
+  .testimonials {
+    margin-top: 0;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+  }
+}
+/** @format */
+.ready__container {
+  width: 100%;
+  background-color: #f67e7e;
+  padding: 90px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/readyimg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.h1 {
+  /* Ready to get started */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  color: #012f34;
+}
+
+.btn {
+  /* Group 6 */
+  background-color: #f67e7e;
+  /* Rectangle */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+  /* contact us */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #012f34;
+}
+
+@media only screen and (max-width: 1100px) {
+  .ready__container {
+    flex-direction: column;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .h1 {
+    font-size: 2rem;
+  }
+}
+/** @format */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #014e56;
+  padding: 100px 165px;
+  transition: all 0.3ms ease-in-out;
+}
+.navbar__logo {
+  width: 100px;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar__link {
+  /* home */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  transition: linear 0.2s;
+  color: #ffffff;
+}
+.navbar__link:hover {
+  color: #f67e7e;
+}
+.navbar__btn {
+  /* Group 6 */
+  /* Rectangle */
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  /* contact us */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  transition: all 0.3ms ease-in-out;
+  color: #002529;
+}
+.navbar__btn:hover {
+  /* Group 6 */
+  background-color: #014e56;
+  color: #ffffff;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: 20%;
+    justify-content: center;
+  }
+  .navbar__logo {
+    width: 100px;
+  }
+  .navbar__list {
+    gap: 5px;
+  }
+  .navbar__btn {
+    display: none;
+  }
+}
+/** @format */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.livvic-thin {
+  font-family: "Livvic", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.livvic-extralight {
+  font-family: "Livvic", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.livvic-light {
+  font-family: "Livvic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.livvic-regular {
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.livvic-medium {
+  font-family: "Livvic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.livvic-semibold {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.livvic-bold {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.livvic-black {
+  font-family: "Livvic", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.livvic-thin-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.livvic-extralight-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.livvic-light-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.livvic-regular-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.livvic-medium-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.livvic-semibold-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.livvic-bold-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.livvic-black-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/** @format */
+.intro {
+  background-color: #014e56;
+  background-image: url(../img/intro-bottom-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.intro__right {
+  /* Find the best talent */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 60px;
+  /* or 100% */
+  color: #ffffff;
+}
+.intro__left {
+  /* We help companies bu */
+  width: 700px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #ffffff;
+}
+
+.span {
+  color: #f67e7e;
+}
+
+@media only screen and (max-width: 1100px) {
+  .intro {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-size: 150px;
+    padding: 20px;
+  }
+  .intro__title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+  .intro__left {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+}
+/** @format */
+.directors {
+  background-color: #004047;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.card {
+  background-color: #012f34;
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.title__card {
+  /* Cristian Duncan */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  text-align: center;
+  color: #79c8c7;
+}
+
+.txt__card {
+  /* Co-founder & COO */
+  font-family: "Livvic";
+  font-size: 13px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.card_btn {
+  background-color: #f67e7e;
+  width: 46px;
+  height: 46px;
+  border-style: none;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  transition: all 0.3ms ease-in-out;
+}
+
+.card_btn:hover {
+  background-color: #79c8c7;
+  color: #012f34;
+}
+
+.cards-h1 {
+  /* Meet the directors */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  color: #ffffff;
+}
+
+/** @format */
+.Clients {
+  background-color: #012f34;
+  background-image: url(../img/clients-bg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+}
+
+.clients-title {
+  /* Some of our clients */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.clients-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .Clients {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .clients-img {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/** @format */
+.ready__container {
+  width: 100%;
+  background-color: #f67e7e;
+  padding: 90px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/readyimg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.h1 {
+  /* Ready to get started */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+  color: #012f34;
+}
+
+.btn {
+  /* Group 6 */
+  background-color: #f67e7e;
+  /* Rectangle */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+  /* contact us */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #012f34;
+}
+
+@media only screen and (max-width: 1100px) {
+  .ready__container {
+    flex-direction: column;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .h1 {
+    font-size: 2rem;
+  }
+}
+/** @format */
+.footer {
+  background-color: #002529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 80px;
+}
+.footer__list {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  gap: 25px;
+  /* home */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  color: #ffffff;
+}
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__text__left {
+  margin-top: 30px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.footer__text_title {
+  /* 987 Hillcrest Lane I */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.footer__title {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: 20%;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */

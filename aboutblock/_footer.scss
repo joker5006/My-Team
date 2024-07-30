@@ -1,0 +1,77 @@
+/** @format */
+
+.footer {
+  background-color: #002529;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 80px;
+
+  
+
+  &__list {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    gap: 25px;
+    /* home */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    color: #ffffff;
+  }
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &__text__left {
+    margin-top: 30px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  &__text_title {
+    /* 987 Hillcrest Lane I */
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  &__title {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    .footer {
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: center;
+      gap: 20%;
+      justify-content: center;
+   
+    }
+  }
+  
